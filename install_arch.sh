@@ -4,7 +4,13 @@
 sudo pacman -Syu
 # zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo pacman -S chromium fzf neovim progress tmux 
+# general
+sudo pacman -S chromium fzf neovim progress tmux
+# arch specific
+sudo pacman -S yaourt
+# aur packages
+yaourt -Syu
+yaourt -S gitkraken
 
 mkdir -p ~/workspace/repos
 cd ~/workspace/repos
@@ -17,3 +23,10 @@ ln -sv ~/workspace/repos/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 
 # tmux
 ln -sv ~/workspace/repos/dotfiles/.tmux.conf ~/.tmux.conf
+
+
+
+# other customizations
+# key speed and delay
+# remap capslock to ctrl
+
