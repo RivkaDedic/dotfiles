@@ -29,4 +29,5 @@ ln -sv ~/workspace/repos/dotfiles/.tmux.conf ~/.tmux.conf
 # other customizations
 # key speed and delay
 # remap capslock to ctrl
+# change default search engine in chromium to duckduckgo
 
