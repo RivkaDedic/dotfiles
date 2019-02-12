@@ -1,16 +1,10 @@
 
 #!/bin/bash
-
-sudo pacman -Syu
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install git curl zsh neovim progress tmux
 # zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-# general
-sudo pacman -S chromium fzf neovim progress tmux
-# arch specific
-sudo pacman -S yaourt
-# aur packages
-yaourt -Syu
-yaourt -S gitkraken
 
 mkdir -p ~/workspace/repos
 cd ~/workspace/repos
@@ -24,10 +18,4 @@ nvim +PluginInstaller +qall
 # tmux
 ln -sv ~/workspace/repos/dotfiles/.tmux.conf ~/.tmux.conf
 
-
-
-# other customizations
-# key speed and delay
-# remap capslock to ctrl
-# change default search engine in chromium to duckduckgo
 
